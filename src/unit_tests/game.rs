@@ -4,7 +4,7 @@ use game::Game;
 fn game_score_nothing_is_valid() {
     // given a game validate function
     let rolls = &[];
-    let expected_result = Result::Ok(&[]);
+    let expected_result = Result::Ok([].as_ref());
     let validate = Game::validate;
 
     // when an empty slice is validated
